@@ -11,23 +11,34 @@ public class MainActivity extends AppCompatActivity {
 
 
     int contador;
-    TextView contadorDeClics;
-    Button augmentarElContador;
+    TextView texto1;
+    Button boton1;
+    Button reset1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        contadorDeClics = findViewById(R.id.text);
-        augmentarElContador = findViewById(R.id.boton1);
-
-        augmentarElContador.setOnClickListener(new View.OnClickListener() {
+        texto1 = findViewById(R.id.text);
+        boton1 = findViewById(R.id.ResetAll);
+        reset1 = findViewById(R.id.reset1);
+        boton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 contador++;
-                contadorDeClics.setText("Has clicado " + contador + " veces");
+                texto1.setText("Has clicado " + contador + " veces");
             }
         });
+
+        reset1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                contador = 0;
+                texto1.setText("Has clicado " + contador + " veces");
+            }
+        });
+
     }
 }

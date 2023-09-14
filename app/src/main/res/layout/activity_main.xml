@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/contadorDeClics"
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Has clicado 0 veces"
@@ -18,14 +18,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/augmentarElContador"
+        android:id="@+id/boton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click me!"
+        android:text="Clica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contadorDeClics"/>
+        app:layout_constraintTop_toBottomOf="@+id/text"/>
+
+
     <Button
         android:id="@+id/augmentarElContador"
         android:layout_width="wrap_content"
@@ -34,6 +36,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contadorDeClics"/>
+        app:layout_constraintTop_toBottomOf="@+id/boton1"/>
+
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>

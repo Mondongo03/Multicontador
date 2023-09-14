@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        contadorDeClics = findViewById(R.id.contadorDeClics);
-        augmentarElContador = findViewById(R.id.augmentarElContador);
+        contadorDeClics = findViewById(R.id.text);
+        augmentarElContador = findViewById(R.id.boton1);
 
         augmentarElContador.setOnClickListener(new View.OnClickListener() {
             @Override

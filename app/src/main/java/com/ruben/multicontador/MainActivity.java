@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
 
         texto1 = findViewById(R.id.text);
         boton1 = findViewById(R.id.ResetAll);
-        reset1 = findViewById(R.id.reset1);
         boton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

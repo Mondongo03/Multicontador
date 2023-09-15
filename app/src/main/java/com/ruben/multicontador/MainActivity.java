@@ -23,21 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         texto1 = findViewById(R.id.text);
         boton1 = findViewById(R.id.ResetAll);
-        boton1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                contador++;
-                texto1.setText("Has clicado " + contador + " veces");
-            }
-        });
 
-        reset1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                contador = 0;
-                texto1.setText("Has clicado " + contador + " veces");
-            }
-        });
 
     }
 }

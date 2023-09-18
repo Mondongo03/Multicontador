@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     int contador2 = 0;
     int contador3 = 0;
     int contador4 = 0;
+
+    int contadorGlobal = 0;
     TextView texto1;
     Button reset_all;
 
@@ -62,8 +64,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 contador1 ++;
-                texto1.setText(contador1 + contador2 + contador3 + contador4);
-                texto2.setText(contador1);
+                contadorGlobal = contador1+contador2+contador3+contador4;
+
+                texto1.setText(""+contadorGlobal);
+                texto2.setText(""+contador1);
             }
         });
 
@@ -71,8 +75,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View vb) {
                 contador1 = 0;
-                texto1.setText(contador1 + contador2 + contador3 + contador4);
-                texto2.setText(contador1);
+                contadorGlobal = contador1+contador2+contador3+contador4;
+
+                texto1.setText(""+contadorGlobal);
+                texto2.setText(""+contador1);
             }
         });
 
@@ -80,8 +86,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View vc) {
                 contador2 ++;
-                texto1.setText(contador1 + contador2 + contador3 + contador4);
-                texto3.setText(contador2);
+                contadorGlobal = contador1+contador2+contador3+contador4;
+
+                texto1.setText(""+contadorGlobal);
+                texto3.setText(""+contador2);
             }
         });
 
@@ -89,8 +97,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View vd) {
                 contador2 = 0;
-                texto1.setText(contador1 + contador2 + contador3 + contador4);
-                texto3.setText(contador2);
+                contadorGlobal = contador1+contador2+contador3+contador4;
+
+                texto1.setText(""+contadorGlobal);
+                texto3.setText(""+contador2);
             }
         });
 
@@ -98,8 +108,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View ve) {
                 contador3 ++;
-                texto1.setText(contador1 + contador2 + contador3 + contador4);
-                texto4.setText(contador3);
+                contadorGlobal = contador1+contador2+contador3+contador4;
+
+                texto1.setText(""+contadorGlobal);
+                texto4.setText(""+contador3);
             }
         });
 
@@ -107,8 +119,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View vf) {
                 contador3 = 0;
-                texto1.setText(contador1 + contador2 + contador3 + contador4);
-                texto4.setText(contador3);
+                contadorGlobal = contador1+contador2+contador3+contador4;
+
+                texto1.setText(""+contadorGlobal);
+                texto4.setText(""+contador3);
             }
         });
 
@@ -116,8 +130,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View vg) {
                 contador4 ++;
-                texto1.setText(contador1 + contador2 + contador3 + contador4);
-                texto5.setText(contador4);
+                contadorGlobal = contador1+contador2+contador3+contador4;
+
+                texto1.setText(""+contadorGlobal);
+                texto5.setText(""+contador4);
             }
         });
 
@@ -125,24 +141,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View vh) {
                 contador4 = 0;
-                texto1.setText(contador1 + contador2 + contador3 + contador4);
-                texto5.setText(contador4);
+                contadorGlobal = contador1+contador2+contador3+contador4;
+
+                texto1.setText(""+contadorGlobal);
+                texto5.setText(""+contador4);
             }
         });
 
         reset_all.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int contador1 = 0;
-                int contador2 = 0;
-                int contador3 = 0;
-                int contador4 = 0;
-
-                texto1.setText(contador1 + contador2 + contador3 + contador4);
-                texto2.setText(contador1);
-                texto3.setText(contador2);
-                texto4.setText(contador3);
-                texto5.setText(contador4);
+                 contador1 = 0;
+                 contador2 = 0;
+                 contador3 = 0;
+                 contador4 = 0;
+                contadorGlobal = contador1+contador2+contador3+contador4;
+                texto1.setText(""+contadorGlobal);
+                texto2.setText(""+contador1);
+                texto3.setText(""+contador2);
+                texto4.setText(""+contador3);
+                texto5.setText(""+contador4);
             }
         });
     }

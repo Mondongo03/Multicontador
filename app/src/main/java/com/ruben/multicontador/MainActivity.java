@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-int prueba = 5454;
     int contador1 = 0;
     int contador2 = 0;
     int contador3 = 0;
